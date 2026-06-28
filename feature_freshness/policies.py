@@ -10,7 +10,6 @@ from typing import Callable, Dict, Optional
 
 from feature_freshness.freshness import (
     FeatureFreshnessPolicy,
-    FreshnessViolation,
     check_freshness,
 )
 
