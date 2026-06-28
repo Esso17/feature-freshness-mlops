@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "feature-freshness"
+version = "0.1.0"
+description = "Companion code for 'Feature Freshness: The Forgotten Problem of MLOps'"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["mlops", "feature-store", "feature-freshness", "machine-learning"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+
+[tool.coverage.run]
+source = ["feature_freshness"]
+omit = ["tests/*", "examples/*"]
+
+[tool.coverage.report]
+show_missing = true
