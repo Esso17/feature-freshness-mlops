@@ -13,7 +13,7 @@ git clone https://github.com/Esso17/feature-freshness-mlops.git
 cd feature-freshness-mlops
 pip install -r requirements.txt
 pytest
-python examples/fraud_detection_demo.py
+python3 examples/fraud_detection_demo.py
 ```
 
 ---
